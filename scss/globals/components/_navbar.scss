@@ -4,7 +4,7 @@ nav {
   margin: 0 2rem;
   .navbar {
     display: flex;
-    position: relative;
+    // position: relative;
     justify-content: space-between;
     margin: 5.56rem 0 3.44rem 0;
     align-items: center;
@@ -20,6 +20,7 @@ nav {
       list-style: none;
       text-decoration: none;
       gap: 2.5rem;
+      z-index: 2;
       a {
         text-decoration: none;
         transition: all 0.3s;
@@ -52,10 +53,21 @@ nav {
   display: flex;
   flex-direction: column;
 }
+.overlay {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  width: 25%;
+}
 
 //800px
 @media (max-width: 50rem) {
   nav {
+    margin: 0 1rem;
     .navbar {
       margin: 1.75rem 0 2rem 0;
 

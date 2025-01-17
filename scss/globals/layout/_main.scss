@@ -1,6 +1,7 @@
 main {
   display: flex;
   justify-content: center;
+
   .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -66,6 +67,11 @@ main {
       h3 {
         color: var(--white);
         font-size: var(--fs-s);
+        transition: all 0.3s;
+        &:hover {
+          color: var(--yellow);
+          cursor: pointer;
+        }
       }
       p {
         color: var(--gray-100);
@@ -138,6 +144,9 @@ main {
           gap: 1.5rem;
           img {
             max-height: 129px;
+          }
+          .card-info {
+            gap: 0;
           }
         }
       }

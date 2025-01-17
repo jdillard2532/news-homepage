@@ -275,7 +275,6 @@ nav {
 }
 nav .navbar {
   display: flex;
-  position: relative;
   justify-content: space-between;
   margin: 5.56rem 0 3.44rem 0;
   align-items: center;
@@ -290,6 +289,7 @@ nav .navbar ul {
   list-style: none;
   text-decoration: none;
   gap: 2.5rem;
+  z-index: 2;
 }
 nav .navbar ul a {
   text-decoration: none;
@@ -322,7 +322,21 @@ nav .navbar ul li {
   flex-direction: column;
 }
 
+.overlay {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  width: 25%;
+}
+
 @media (max-width: 50rem) {
+  nav {
+    margin: 0 1rem;
+  }
   nav .navbar {
     margin: 1.75rem 0 2rem 0;
   }
@@ -404,6 +418,11 @@ main .container .main-new-info h2 {
 main .container .main-new-info h3 {
   color: var(--white);
   font-size: var(--fs-s);
+  transition: all 0.3s;
+}
+main .container .main-new-info h3:hover {
+  color: var(--yellow);
+  cursor: pointer;
 }
 main .container .main-new-info p {
   color: var(--gray-100);
@@ -473,5 +492,8 @@ main .container .main-footer .card .card-info p:nth-of-type(2) {
   }
   main .container .main-footer .card img {
     max-height: 129px;
+  }
+  main .container .main-footer .card .card-info {
+    gap: 0;
   }
 }/*# sourceMappingURL=style.css.map */
