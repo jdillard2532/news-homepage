@@ -2,6 +2,7 @@ nav {
   display: flex;
   justify-content: center;
   margin: 0 2rem;
+  transition: all 0.3s;
   .navbar {
     display: flex;
     // position: relative;
@@ -64,8 +65,8 @@ nav {
   width: 25%;
 }
 
-//800px
-@media (max-width: 50rem) {
+//768px
+@media (max-width: 48rem) {
   nav {
     margin: 0 1rem;
     .navbar {

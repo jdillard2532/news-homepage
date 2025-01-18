@@ -15,7 +15,18 @@ menuImage.addEventListener("click", () => {
   } else {
     menuImage.src = "./assets/images/icon-menu.svg";
     navbarNav.style.display = "none";
-    // body.style.backgroundColor = "var(--white)";
+    overlay.style.display = "none";
+  }
+});
+
+// function windowSize(){
+//   let windowWidth =
+// }
+
+addEventListener("resize", () => {
+  let windowWidth = window.innerWidth;
+  if (windowWidth > 768) {
+    navbarNav.classList.remove("activeMenu");
     overlay.style.display = "none";
   }
 });

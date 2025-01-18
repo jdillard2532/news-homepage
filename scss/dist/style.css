@@ -272,6 +272,7 @@ nav {
   display: flex;
   justify-content: center;
   margin: 0 2rem;
+  transition: all 0.3s;
 }
 nav .navbar {
   display: flex;
@@ -333,7 +334,7 @@ nav .navbar ul li {
   width: 25%;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 48rem) {
   nav {
     margin: 0 1rem;
   }
@@ -464,9 +465,17 @@ main .container .main-footer .card .card-info p:nth-of-type(2) {
   color: var(--darkBlue);
   font-size: var(--fs-xs);
   font-weight: 700;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main .container .main-footer .card .card-info p:nth-of-type(2):hover {
+  color: var(--red);
+}
+main a {
+  text-decoration: none;
 }
 
-@media (max-width: 62.5rem) {
+@media (max-width: 48rem) {
   main .container {
     display: block;
     margin: 0 1rem 4rem;
@@ -476,7 +485,7 @@ main .container .main-footer .card .card-info p:nth-of-type(2) {
   }
   main .container .main-title h1 {
     padding: 0;
-    width: auto;
+    width: 100%;
     margin-top: 1.5rem;
   }
   main .container .main-title div {
