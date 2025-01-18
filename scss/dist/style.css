@@ -364,6 +364,7 @@ main .container .main-image {
 }
 main .container .main-image img {
   height: 100%;
+  max-height: 300px;
 }
 main .container .main-title {
   display: flex;
