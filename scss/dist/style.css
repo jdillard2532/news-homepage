@@ -393,6 +393,7 @@ main .container .main-title div .btn {
   color: var(--darkBlue);
   padding: 1rem;
   max-width: 11.56rem;
+  letter-spacing: 0.3rem;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 600;
@@ -440,7 +441,7 @@ main .container .main-new-info div:nth-of-type(2) {
 main .container .main-footer {
   display: flex;
   grid-column: 1/-1;
-  margin-top: 3rem;
+  margin-top: 2rem;
   gap: 1.88rem;
 }
 main .container .main-footer .card {

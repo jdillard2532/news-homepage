@@ -40,6 +40,7 @@ main {
           color: var(--darkBlue);
           padding: 1rem;
           max-width: 11.56rem;
+          letter-spacing: 0.3rem;
           cursor: pointer;
           text-transform: uppercase;
           font-weight: 600;
@@ -89,7 +90,7 @@ main {
     .main-footer {
       display: flex;
       grid-column: 1/-1;
-      margin-top: 3rem;
+      margin-top: 2rem;
       gap: 1.88rem;
       .card {
         display: flex;
