@@ -415,7 +415,7 @@ main .container .main-new-info h2 {
   font-size: 2rem;
   font-size: clamp(2rem, 1.7rem + 1.28vw, 2.5rem);
   color: var(--yellow);
-  margin-bottom: 2rem;
+  margin: 1rem 0 1.5rem;
 }
 main .container .main-new-info h3 {
   color: var(--white);
@@ -451,7 +451,6 @@ main .container .main-footer .card {
 main .container .main-footer .card img {
   height: 100%;
   max-width: 100px;
-  max-height: 100px;
 }
 main .container .main-footer .card .card-info {
   display: flex;
