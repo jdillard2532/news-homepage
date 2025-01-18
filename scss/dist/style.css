@@ -277,7 +277,7 @@ nav {
 nav .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 5.56rem 0 3.44rem 0;
+  margin: 5rem 0 3.44rem 0;
   align-items: center;
   max-width: 70.5rem;
   width: 100%;
@@ -431,7 +431,7 @@ main .container .main-new-info p {
   padding: 0.5rem 0;
 }
 main .container .main-new-info div {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 main .container .main-new-info div:nth-of-type(2) {
   border-top: 1px solid var(--gray-100);
