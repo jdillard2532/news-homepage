@@ -89,7 +89,7 @@ main {
     .main-footer {
       display: flex;
       grid-column: 1/-1;
-      margin-top: 4rem;
+      margin-top: 3rem;
       gap: 1.88rem;
       .card {
         display: flex;
@@ -98,6 +98,7 @@ main {
         img {
           height: 100%;
           max-width: 100px;
+          max-height: 100px;
         }
 
         .card-info {
